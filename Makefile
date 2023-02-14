@@ -138,14 +138,14 @@ LINKER_SCRIPT=
 
 # Custom post-build commands to run.
 PREBUILD=
-PREBUILD+=rm -rf bmi160;
-PREBUILD+=mkdir bmi160/;
-PREBUILD+=cp $(SEARCH_BMI160_driver)/bmi160* bmi160/;
-PREBUILD+=cp $(SEARCH_BMI160_driver)/LICENSE bmi160/;
-ifeq (CY_028_SENSE_SHIELD, $(SHIELD_DATA_COLLECTION))
-PREBUILD+=sed -i 's/UINT8_C(0xD1)/UINT8_C(0xD8)/' bmi160/bmi160_defs.h;
-endif
-CY_IGNORE+=$(SEARCH_BMI160_driver)
+# PREBUILD+=rm -rf bmi160;
+# PREBUILD+=mkdir bmi160/;
+# PREBUILD+=cp $(SEARCH_BMI160_driver)/bmi160* bmi160/;
+# PREBUILD+=cp $(SEARCH_BMI160_driver)/LICENSE bmi160/;
+# ifeq (CY_028_SENSE_SHIELD, $(SHIELD_DATA_COLLECTION))
+# PREBUILD+=sed -i 's/UINT8_C(0xD1)/UINT8_C(0xD8)/' bmi160/bmi160_defs.h;
+# endif
+# CY_IGNORE+=$(SEARCH_BMI160_driver)
 
 ################################################################################
 # Paths
